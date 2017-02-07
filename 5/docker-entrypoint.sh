@@ -14,6 +14,9 @@ if [ "$1" = 'elasticsearch' -a "$(id -u)" = '0' ]; then
 	for path in \
 		/usr/share/elasticsearch/data \
 		/usr/share/elasticsearch/logs \
+        /es_data1 \
+        /es_data2 \
+        /es_data3 \
 	; do
 		chown -R elasticsearch:elasticsearch "$path"
 	done
