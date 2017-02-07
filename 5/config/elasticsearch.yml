@@ -4,7 +4,6 @@ network.host: 0.0.0.0
 network.publish_host: ${HOST_IP}
 path.data: /es_data1,/es_data2,/es_data3
 discovery.zen.ping.unicast.hosts: ["prod-elk-es-1.battery-park.conductor.com", "prod-elk-es-2.battery-park.conductor.com"]
-discovery.zen.ping.multicast.enabled: false
 node.master: true
 node.data: true
 gateway.recover_after_nodes: 2
